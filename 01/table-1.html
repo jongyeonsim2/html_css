@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>상품 소개 페이지</title>
+  <style>
+    table, th, td {
+      border:1px solid #ccc;
+      border-collapse: collapse;
+    }
+    th, td { padding:10px 20px; }
+  </style>
+</head>
+<body>
+  <h1>이미지로 하이퍼링크 삽입하기</h1>
+  <a href="./order.html"><img src="images/tangerines.jpg"></a>
+  <h1>텍스트로 하이퍼링크 삽입하기</h1>
+  <a href="./order.html">주문서 작성하기</a>
+  <h1>하이퍼링크 새창에서 열기</h1>
+  <a href="./order.html" target="_blank">주문서 작성하기</a>
+  <h1>외부로 하이퍼링크 연결하기</h1>
+  <a href="https://blog.naver.com/edrb/222919321563" target="_blank">자세한 정보는....</a>
+
+  <h1>멀티미디어 파일 삽입하기</h1>
+  <h1>embed 태그는 audio, video, object 태그를 <br> 지원하지 않는 브라우저에서 사용</h1>
+  <embed src="medias/spring.mp3">
+  <br>
+  <p1>audio tag 사용</p1>
+  <audio src="medias/spring.mp3" controls></audio>
+
+  <p1>동영상 파일 삽입하기</p1>
+  <video src="medias/salad.mp4" controls width="700"></video>
+
+  <h1>웹 문서에 PDF 파일 삽입하기</h1>
+  <object width="900" height="800" data="product.pdf"></object>
+
+  <p>원본 사이즈</p>
+  <img src="images/tangerines.jpg" alt="레드향">
+  <p>width : 50%, height : 50%</p>
+  <img src="images/tangerines.jpg" alt="레드향" width="50%" height="50%">
+  <p>width : 150%</p>
+  <img src="images/tangerines.jpg" alt="레드향" width="150%">
+  <table>
+      <tr>
+        <th>용도</th>
+        <th>중량</th>
+        <th>갯수</th>
+        <th>가격</th>
+      </tr>
+      <tr>
+        <th>선물용</th>
+        <th>3kg</th>
+        <th>11~16과</th>
+        <th>35,000원</th>
+      </tr>
+      <tr>
+        <th>가정용</th>
+        <th>3kg</th>
+        <th>11~16과</th>
+        <th>30,000</th>
+      </tr>
+      <tr>
+        <th>가정용2</th>
+        <th>6kg</th>
+        <th>11~16과</th>
+        <th>60,000</th>
+      </tr>
+  </table>
+
+  <br>
+
+  <table>
+    <colgroup>
+      <col style="background-color: #eee;">
+      <col>
+      <col style="width:150px">
+      <col style="width: 200px">
+    </colgroup>
+    <tr>
+      <th>용도</th>
+      <th>중량</th>
+      <th>갯수</th>
+      <th>가격</th>
+    </tr>
+    <tr>
+      <th>선물용</th>
+      <th>3kg</th>
+      <th>11~16과</th>
+      <th>35,000원</th>
+    </tr>
+    <tr>
+      <td rowspan="3">가정용</td>
+      <td>3kg</td>
+      <td>11~16과</td>
+      <td>30,000</td>
+    </tr>
+    <tr>
+      <td>6kg</td>
+      <td>11~16과</td>
+      <td>60,000</td>
+    </tr>
+    <tr>
+      <td>6kg</td>
+      <td>11~16과</td>
+      <td>60,000</td>
+    </tr>
+</table>
+
+</body>
+</html>

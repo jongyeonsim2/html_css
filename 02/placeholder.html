@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>배송 정보</legend>
+      <ul>
+        <li>
+          <label>이름</label>
+          <input type="text" id="user-name" autofocus required>
+        </li>
+        <li>
+          <label>배송 주소</label>
+          <input type="text" id="addr" required>
+        </li>
+        <li>
+          <label>메일 주소</label>
+          <input type="email" id="mail">
+        </li>
+        <li>
+          <label>연락처</label>
+          <input type="tel" id="phone" placeholder="하이픈 제외하고 입력(01022227777)">
+        </li>
+        <li>
+          <label>상품 정보</label>
+          <input type="text" id="prod" value="레드향 고급제품" readonly>
+        </li>
+        <li>
+          <label>상품 정보 선택</label>
+          <select id="select_prod">
+            <option vlaue="special_3" selected>선물용 3KG</option>
+            <option value="special_5">선물용 5KG</option>
+            <option value="family_3">가정용 3KG</option>
+            <option value="family_5">가정용 5KG</option>
+          </select>
+        </li>
+        <li>
+          <label>메모</label>
+          <textarea id="memo" cols="40" rows="4"></textarea>
+        </li>
+      </ul>
+    </fieldset>
+    <input type="submit" value="주문하기">
+    <input type="reset" value="취소하기">
+  </form>
+</body>
+</html>

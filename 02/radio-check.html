@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>레드향 주문하기</title>
+</head>
+<body>
+  <h1>레드향 주문하기</h1>
+  <form>
+    <fieldset>
+      <legend>상품 선택</legend>
+      <p><b>주문할 상품을 선택하세요.</b></p>
+      <ul>
+        <li>
+          <label><input type="checkbox" value="gift_3kg" checked>선물용 3KG</label>
+          <input type="number"> 개
+        </li>
+        <li>
+          <label><input type="checkbox" value="gift_5kg">선물용 5KG</label>
+          <input type="number"> 개
+        </li>
+        <li>
+          <label><input type="checkbox" value="home_3kg">가정용 3KG</label>
+          <input type="number"> 개
+        </li>
+        <li>
+          <label><input type="checkbox" value="home_5kg">가정용 5KG</label>
+          <input type="number"> 개
+        </li>
+      </ul>
+      <p><b>포장 선택</b></p>
+      <ul>
+        <li><label><input type="radio" name="gift" value="yes">선물 포장</label></li>
+        <li><label><input type="radio" name="gift" value="no" checked>포장 안함</label></li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>배송 정보</legend>
+      <ul>
+        <li>
+          <label>이름</label>
+          <input type="text" id="user-name">
+        </li>
+        <li>
+          <label>배송 주소</label>
+          <input type="text" id="addr">
+        </li>
+        <li>
+          <label>메일 주소</label>
+          <input type="email" id="mail">
+        </li>
+        <li>
+          <label>연락처</label>
+          <input type="tel" id="phone">
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+</body>
+</html>

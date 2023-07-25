@@ -1,0 +1,6 @@
+/* 외부 스타일 */
+h1 {
+  padding: 100px; /* text와의 내부 여백을 조절 */
+  background-color: black; /* 내부 색 */
+  color:aqua;  /* 글자 색 */
+}

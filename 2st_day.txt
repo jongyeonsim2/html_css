@@ -28,8 +28,24 @@
      CSS 경량화 : CSS 소스의 주석, 줄 바꿈, 공백 등을 제거하여 필요한 정보만
      남겨서 파일을 작게 만드는 것. css minify, css compress 로 검색해서 사용.
 
-css
-style.css
-stylesheet-2.html
 
-universe.html
+  2.3 div 태그와 span 태그
+   - 용도
+     웹 페이지를 만들 때 관련있는 요소끼리 그룹으로 묶으면 레이아웃을
+     구성하기 쉬워지고, HTML 구조를 쉽게 작성할 수 있음.
+   - 차이점
+     div :  블록 요소를 그룹으로 묶을 때 사용.
+     span : 인라인 요소를 그룹으로 묶을 때 사용.
+            블록 요소를 묶을 수 없음.
+
+  2.4 캐스캐이딩(Cascading)
+   - 의미
+     CSS에서 웹 요소에 둘 이상의 스타일을 적용시, 우선순위에 따라 적용할
+     스타일을 결정하게 됨.
+   - 스타일 우선순위
+      1순위 : !important
+      2순위 : 인라인 스타일, inline.html 참조
+      3순위 : id 스타일, id.html 참조
+      4순위 : class 스타일, class.html 참조
+      5순위 : 타입 스타일, type.html 참조
+

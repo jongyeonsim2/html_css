@@ -1,0 +1,14 @@
+h1 {
+  /* 1em : 16px */
+  font-size: 1.4em;
+  background-color: #222;
+  color:#fff;
+  padding:10px;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.2em;
+  color:blue;
+}

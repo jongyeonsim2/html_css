@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 타입 스타일 사용하기 */
+    table {
+      caption-side: top; /* 표 캡션의 위치 */
+      border:1px solid black; /* 표 테두리 검은색 실선 */
+    }
+    td, th {
+      border:1px dotted black;/* 셀 테두리 검은색 점선 */
+      padding:10px;/* 셀 테두리와 내용 사이의 여백 */
+      text-align: center;/* 셀 내용 가운데 정렬 */
+    }
+  </style>
+</head>
+<body>
+  <h2>상품 구성</h2>
+  <table>
+    <caption>선물용과 가정용 상품 구성</caption>
+    <thead>
+      <tr>
+        <th>용도</th>
+        <th>중량</th>
+        <th>갯수</th>
+        <th>가격</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">선물용</td>
+        <td>3KG</td>
+        <td>11~16</td>
+        <td>35,000</td>
+      </tr>
+      <tr>
+        <td>5KG</td>
+        <td>10~12</td>
+        <td>52,000</td>
+      </tr>
+      <tr>
+        <td rowspan="2">가정용</td>
+        <td>3KG</td>
+        <td>11~12</td>
+        <td>20,000</td>
+      </tr>
+      <tr>
+        <td>5kg</td>
+        <td>15~19</td>
+        <td>40,000</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

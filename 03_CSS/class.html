@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!-- 클래스 선택자 스타일 사용하기 -->
+<head>
+  <meta charset="UTF-8">
+  <title>상품 소개 페이지</title>
+  <!-- 타입 선택자 지정 -->
+  <style>
+    /* 타입 선택자는 특정 태그를 사용한 모든 요소에 스타일을 적용 */
+    p {
+      font-style: italic;
+    }
+    /* 클래스 선택자 지정 */
+    .accent {
+      border: 1px solid #000; /* 검정색으로 두께가 1px 인 실선으로 사각형을 표시 */
+      padding: 5px;
+    }
+    .bg {
+      background-color: #ddd; /* 회색 배경색 */
+    }
+  </style>
+</head>
+<body>
+  <h1 class="accent bg">레드향</h1>
+  <p>껍질에 붉은 빛이 돌아 <span class="accent">레드향</span>이라 불린다.</p>
+  <p>레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배가 크다.</p>
+  <p>비타민 C와 비타민 P가 풍부하다.</p>
+</body>
+</html>

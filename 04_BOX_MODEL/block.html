@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- 박스 모델 - 블록 레벨 요소 -->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>박스 모델 - 블록 레벨 요소</title>
+  <style>
+    body * { /* 상속관계 */
+      border:1px solid blue;
+    }
+    .accent {
+      color:red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>시간이란....</h1>
+  <div>내일 죽을 것처럼 <p class="accent">오늘</p>을 살고</div>
+  <!-- 인라인 요소 -->
+  <div>내일 죽을 것처럼 <span class="accent">오늘</span>을 살고</div>
+  <p>영원히 살 것처럼 내일을 꿈꾸어라.</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>박스 모델 - 패딩</title>
+  <style>
+    h1 {
+      /* 박스 모델 요소를 인라인 모델 요소로 표시 */
+      display:inline-block;
+      border:1px solid #000;
+    }
+    #padding1 {
+      /* 상 우 하 좌 */
+      padding:20px 30px 40px 50px;
+    }
+    #padding2 {
+      /* 상하(20px) 좌우(30px) */
+      padding: 20px 30px;
+    }
+    #padding3 {
+      /* 상하좌우 4 방향 20px */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>레드향</h1>
+  <h1 id="padding1">레드향</h1>
+  <h1 id="padding2">레드향</h1>
+  <h1 id="padding3">레드향</h1>
+</body>
+</html>

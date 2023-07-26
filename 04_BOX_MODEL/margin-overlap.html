@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>박스모델 - 마진 중첩</title>
+  <style>
+    * {
+      /* box-sizing
+        박스 요소의 너비와 높이를 계산하는 기준을 지정.
+
+        - content-box
+          요소의 너비를 200px 로 설정하면, 콘텐츠 영역이 200px 너비를 가지고,
+          테두리(10px)와 안쪽 여백(20px)은 200px 에 추가로 더해짐.
+          요소의 너비는 200px + 10 + 20 임.
+        - border-box
+          요소의 너비를 200px 로 설정하면, 테두리와 안쪽 여백을 추가를 하면,
+          콘텐츠 영역이 그만큼 줄어들게 됨. 
+          요소의 너비는 200px 로 유지됨.
+
+      */
+      box-sizing: border-box;
+    }
+    div {
+      width:200px;
+      height: 100px;
+      margin:30px; /* 마진 중첩의 기준이 되는 부분임. */
+    }
+    #box1 {
+      background: red;
+    }
+    #box2 {
+      background: blue;
+    }
+    #box3 {
+      padding:20px;
+      margin:60px;
+      background: green;
+    }
+  </style>
+</head>
+<body>
+  <div id="box1"></div>
+  <div id="box2"></div>
+  <div id="box3"></div>
+</body>
+</html>

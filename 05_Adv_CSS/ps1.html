@@ -1,0 +1,128 @@
+<!-- navi.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>속성 선택자</title>
+  <style>
+    .container {
+      width: 960;
+      margin: 0 auto;
+    }
+    .navi {
+      width: 960;
+      height: 60;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ccc;
+    }
+    .navi ul {
+      list-style: none;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+    .navi ul li {
+      float:left;
+      width: 150px;
+      padding: 10px;
+    }
+    /* 가상 클래스 추가 */
+    /* 방문 또는 방문하지 않는 경우의 스타일 적용 */
+    .navi a:link, a:visited {
+      color:#000;
+      text-decoration: none;
+    }
+    /* 마우스 포인트를 오렸을 때, 초점이 맞추어졌을 때 : 배경색을 검정색으로  */
+    .navi a:hover, .navi a:focus {
+      background-color: #222;
+      color: #fff;
+    }
+    /* 메뉴를 선택한 경우 : 배경색을 붉은색으로 */
+    .navi a:active {
+      background-color: red;
+    }
+    .contents {
+      margin:30px auto;
+      width:400px;
+      padding:20px;
+      border:1px solid black;
+      border-radius: 5px;
+    }
+    /* 요소 상태에 따른 가상 클래스 추가 */
+    /* 앵커 대상에 스타일을 적용 */
+    #intro:target {
+      background-color: blue;
+      color:white;
+    }
+    #room:target {
+      background-color: greenyellow;
+    }
+    #reservation:target {
+      background-color: goldenrod;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navi">
+      <ul>
+        <li><a href="#intro">이용 안내</a></li>
+        <li><a href="#room">객실 소개</a></li>
+        <li><a href="#reservation">예약 방법 및 요금</a></li>
+        <li><a href="ps2.html">예약하기</a></li>
+      </ul>
+    </nav>
+    <div id="intro" class="contents">
+      <h2>이용 안내</h2>
+      <p>- ":link"
+        방문하지 않은 링크에 스타일 적용
+        아직 링크를 클릭하지 않은 경우
+      - ":visited"
+        방문한 링크에 스타일 적용
+        링크를 클릭했는 경우
+      - ":hover"
+        특정 요소에 마우스 포인트를 올려놓는 경우
+      - ":active"
+        웹 요소를 활성화 한 경우
+        클릭한 경우
+      - ":focus"
+        웹 요소에 초점이 맞추어진 경우
+        초점이 맞추어진 경우</p>
+    </div>
+    <div id="room" class="contents">
+      <h2>객실 소개</h2>
+      <p>- ":link"
+        방문하지 않은 링크에 스타일 적용
+        아직 링크를 클릭하지 않은 경우
+      - ":visited"
+        방문한 링크에 스타일 적용
+        링크를 클릭했는 경우
+      - ":hover"
+        특정 요소에 마우스 포인트를 올려놓는 경우
+      - ":active"
+        웹 요소를 활성화 한 경우
+        클릭한 경우
+      - ":focus"
+        웹 요소에 초점이 맞추어진 경우
+        초점이 맞추어진 경우</p>
+    </div>
+    <div id="reservation" class="contents">
+      <h2>예약 방법 및 요금</h2>
+      <p>- ":link"
+        방문하지 않은 링크에 스타일 적용
+        아직 링크를 클릭하지 않은 경우
+      - ":visited"
+        방문한 링크에 스타일 적용
+        링크를 클릭했는 경우
+      - ":hover"
+        특정 요소에 마우스 포인트를 올려놓는 경우
+      - ":active"
+        웹 요소를 활성화 한 경우
+        클릭한 경우
+      - ":focus"
+        웹 요소에 초점이 맞추어진 경우
+        초점이 맞추어진 경우</p>
+    </div>
+  </div>
+</body>
+</html>

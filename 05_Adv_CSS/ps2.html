@@ -1,0 +1,143 @@
+<!-- navi.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>속성 선택자</title>
+  <style>
+    .container {
+      width: 960;
+      margin: 0 auto;
+    }
+    .navi {
+      width: 960;
+      height: 60;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ccc;
+    }
+    .navi ul {
+      list-style: none;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+    .navi ul li {
+      float:left;
+      width: 150px;
+      padding: 10px;
+    }
+    /* 가상 클래스 추가 */
+    /* 방문 또는 방문하지 않는 경우의 스타일 적용 */
+    .navi a:link, a:visited {
+      color:#000;
+      text-decoration: none;
+    }
+    /* 마우스 포인트를 오렸을 때, 초점이 맞추어졌을 때 : 배경색을 검정색으로  */
+    .navi a:hover, .navi a:focus {
+      background-color: #222;
+      color: #fff;
+    }
+    /* 메뉴를 선택한 경우 : 배경색을 붉은색으로 */
+    .navi a:active {
+      background-color: red;
+    }
+    .contents {
+      margin:30px auto;
+      width:400px;
+      padding:20px;
+      border:1px solid black;
+      border-radius: 5px;
+    }
+    /* 요소 상태에 따른 가상 클래스 추가 */
+    /* 앵커 대상에 스타일을 적용 */
+    #intro:target {
+      background-color: blue;
+      color:white;
+    }
+    #room:target {
+      background-color: greenyellow;
+    }
+    #reservation:target {
+      background-color: goldenrod;
+    }
+
+
+
+    /* signup form 스타일 부분 */
+    #signup {
+      background: #fff;
+      border:1px solid #222;
+      border-radius: 5px;
+      padding: 20px;
+      width: 400px;
+      margin: 30px auto;
+    }
+
+    #signup fieldset {
+      border: 1px solid #ccc;
+      margin-bottom: 30px;
+    }
+
+    #signup legend {
+      font-size: 16px;
+      font-weight: bold;
+      padding-left: 5px;
+      padding-bottom: 10px;
+    }
+
+    #signup ul li {
+      line-height: 30px;
+      list-style: none;
+      padding: 5px 10px;
+      margin-bottom: 2px;
+    }
+
+    /* 가상클래스 및 가상요소 등을 적용 */
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navi">
+      <ul>
+        <li><a href="ps1.html#intro">이용 안내</a></li>
+        <li><a href="ps1.html#room">객실 소개</a></li>
+        <li><a href="ps1.html#reservation">예약 방법 및 요금</a></li>
+        <li><a href="ps2.html">예약하기</a></li>
+      </ul>
+    </nav>
+    
+    <form id="signup">
+      <fieldset>
+        <legend>개인정보</legend>
+        <ul>
+          <li>
+            <label for="fullname">이름</label>
+            <input id="fullname" name="fullname" type="text" required>
+          </li>
+          <li>
+            <label for="tel">연락처</label>
+            <input id="tel" name="tel" type="tel">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>객실 형태</legend>
+        <ul>
+          <li>
+            <label for="basic">기본형(최대 2인)</label>
+            <input type="radio" name="room" id="basic">
+          </li>
+          <li>
+            <label for="family">가족형(최대 8인)</label>
+            <input type="radio" name="room" id="family">
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">저장</button>
+    </form>
+
+  </div>
+</body>
+</html>

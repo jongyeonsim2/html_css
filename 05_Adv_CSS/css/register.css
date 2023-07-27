@@ -57,3 +57,24 @@ body {
   font-size: 13px;
   width: 150px;
 }
+
+/* 특정 속성( required )이 있는 요소를 선택하는 속성 선택자 */
+#signup input[required] {
+  border:1px red solid;
+}
+
+/* 특정 속성( readonly )이 있는 요소를 선택하는 속성 선택자 */
+#signup input[readonly] {
+  border:none;
+}
+
+/* 아이디, 비밀번호, 비밀번호 확인, 이름, 메일주소 입력 항목 크기 지정  */
+/* 특정 속성값이 있는 요소를 선택하는 속성 선택자 */
+#signup input[type=text], #signup input[type=password],
+#signup input[type=tel], #singup input[type=email] {
+  border: 1px solde #ccc;
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 5px;
+  width: 200px;
+}

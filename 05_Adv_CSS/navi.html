@@ -1,0 +1,58 @@
+<!-- navi.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>속성 선택자</title>
+  <style>
+    .container {
+      width: 960;
+      margin: 0 auto;
+    }
+    .navi {
+      width: 960;
+      height: 60;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ccc;
+    }
+    .navi ul {
+      list-style: none;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+    .navi ul li {
+      float:left;
+      width: 150px;
+      padding: 10px;
+    }
+    /* 가상 클래스 추가 */
+    /* 방문 또는 방문하지 않는 경우의 스타일 적용 */
+    .navi a:link, a:visited {
+      color:#000;
+      text-decoration: none;
+    }
+    /* 마우스 포인트를 오렸을 때, 초점이 맞추어졌을 때 : 배경색을 검정색으로  */
+    .navi a:hover, .navi a:focus {
+      background-color: #222;
+      color: #fff;
+    }
+    /* 메뉴를 선택한 경우 : 배경색을 붉은색으로 */
+    .navi a:active {
+      background-color: red;
+    }
+  </style>
+</head>
+<!-- 특정 속성값이 있는 요소를 서택하는 선택자 -->
+<body>
+  <div class="container">
+    <nav class="navi">
+      <ul>
+        <li><a href="#">이용 안내</a></li>
+        <li><a href="#">객실 소개</a></li>
+        <li><a href="#">예약 방법 및 요금</a></li>
+        <li><a href="#">예약하기</a></li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>

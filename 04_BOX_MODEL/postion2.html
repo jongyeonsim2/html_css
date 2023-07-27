@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 위치 지정</title>
+  <style>
+    /* 타입 선택자 */
+    p {
+      width:500px;
+      height:200px;
+      background-color: #eee;
+      border:1px solid #ccc;
+      line-height: 2;
+      padding:10px;
+    }
+    /* id 선택자 */
+    #static {
+      position: static;
+    }
+    #relative-1 {
+      position: relative;
+    }
+    #relative-2 {
+      position: relative;
+      left:100px;
+      top:-50px;
+    }
+    #fixed {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      position: fixed;
+      right:30px;
+      top:30px;
+    }
+  </style>
+</head>
+<body>
+  <p id="static">속성값 : static : html 문서의 흐름. html tag 작성 순서.
+    relative : static 동일. 추가적으로 위치값을 지정 가능.
+    absolute : relative 를 적용한 상위 요소를 기준으로 위치를 지정.
+    fixed : 브라우저 기준으로 위치를 지정.</p>
+  <p id="relative-1">속성값 : static : html 문서의 흐름. html tag 작성 순서.
+    relative : static 동일. 추가적으로 위치값을 지정 가능.
+    absolute : relative 를 적용한 상위 요소를 기준으로 위치를 지정.
+    fixed : 브라우저 기준으로 위치를 지정.</p>
+  <p id="relative-2">속성값 : static : html 문서의 흐름. html tag 작성 순서.
+    relative : static 동일. 추가적으로 위치값을 지정 가능.
+    absolute : relative 를 적용한 상위 요소를 기준으로 위치를 지정.
+    fixed : 브라우저 기준으로 위치를 지정.</p>
+  <p id="fixed"></p>
+</body>
+</html>

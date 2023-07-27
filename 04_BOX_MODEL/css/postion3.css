@@ -1,0 +1,23 @@
+/* 전체 선택자 */
+* {
+  margin:0;
+  padding:0;
+}
+/* id 선택자 */
+#contents {
+  background: url("../images/bg.jpg") no-repeat;
+  background-size: cover;
+  width:800px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+/* 타입 선택자 */
+h1 {
+  color:white;
+  font-size: 120px;
+  position: absolute;/* relative 를 적용한 상위요소 기준 */
+                    /* h1의 상위는 contents */
+  right:100px;
+  bottom: 100px;
+}

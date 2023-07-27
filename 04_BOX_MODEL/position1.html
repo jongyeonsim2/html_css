@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 위치 지정</title>
+  <style>
+    /* 전체 선택자 : 모든 요소에 적용 */
+    * {
+      margin:0;
+      padding:0;
+    }
+    /* 타입 선택자 */
+    p {
+      width:300px;
+      border:1px solid #ccc;
+      padding:10px;
+    }
+    /* id 선택자 */
+    #pos1 {
+      position:absolute;
+      left:50px;
+      top:50px;
+    }
+    #pos2 {
+      position:absolute;
+      right:100px;
+      top:100px;
+    }
+    #pos3 {
+      position:absolute;
+      left:100px;
+      bottom:100px;
+    }
+  </style>
+</head>
+<body>
+  <p id="pos1">속성값 : static : html 문서의 흐름. html tag 작성 순서.
+    relative : static 동일. 추가적으로 위치값을 지정 가능.
+    absolute : relative 를 적용한 상위 요소를 기준으로 위치를 지정.
+    fixed : 브라우저 기준으로 위치를 지정.</p>
+  <p id="pos2">속성값 : static : html 문서의 흐름. html tag 작성 순서.
+    relative : static 동일. 추가적으로 위치값을 지정 가능.
+    absolute : relative 를 적용한 상위 요소를 기준으로 위치를 지정.
+    fixed : 브라우저 기준으로 위치를 지정.</p>
+  <p id="pos3">속성값 : static : html 문서의 흐름. html tag 작성 순서.
+    relative : static 동일. 추가적으로 위치값을 지정 가능.
+    absolute : relative 를 적용한 상위 요소를 기준으로 위치를 지정.
+    fixed : 브라우저 기준으로 위치를 지정.</p>
+</body>
+</html>

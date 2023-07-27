@@ -1,0 +1,44 @@
+<!-- attr1.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>속성 선택자</title>
+  <style>
+    ul {
+      list-style: none;
+    }
+    li {
+      width:120px;
+      display: inline-block;
+      margin:10px;
+    }
+    /* 연결 선택자 */
+    li a {
+      padding: 5px 20px;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* 속성 선택자 */
+    /* href 속성이 있는 a 태그를 선택하는 선택자 */
+    a[href] {
+      background: greenyellow;
+      border: 1px solid #ccc;
+      font-weight: normal;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 특정 속성이 있는 요소를 선택하는 선택자 -->
+  <ul>
+    <li><a>메인 메뉴 : </a></li>
+    <li><a href="">메뉴 1</a></li>
+    <li><a href="">메뉴 2</a></li>
+    <li><a href="">메뉴 3</a></li>
+    <li><a>메뉴 4</a></li>
+  </ul>
+</body>
+</html>

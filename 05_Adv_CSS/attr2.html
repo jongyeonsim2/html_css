@@ -1,0 +1,38 @@
+<!-- attr2.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>속성 선택자</title>
+  <style>
+    ul {
+      list-style: none;
+    }
+    li {
+      width:120px;
+      display: inline-block;
+      margin:10px;
+    }
+    /* 연결 선택자 */
+    li a {
+      padding: 5px 20px;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* 속성 선택자 */
+    /* a 요소중에서 target 의 속성값이 "_blank" 인 요소에만 적용 */
+    a[target="_blank"] {
+      background: url(images/newwindow.png) no-repeat right;
+    }
+  </style>
+</head>
+<!-- 특정 속성값이 있는 요소를 서택하는 선택자 -->
+<body>
+  <ul>
+    <li><a href="" target="_blank">HTML</a></li>
+    <li><a href="">CSS</a></li>
+    <li><a href="">javascript</a></li>
+  </ul>
+</body>
+</html>

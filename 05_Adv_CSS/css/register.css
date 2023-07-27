@@ -49,3 +49,11 @@ body {
   margin : auto;
   padding: 7px 25px;
 }
+
+/* 입력 항목의 정렬 */
+#signup label {
+  /* 현재는 html문서 순서대로 위치 지정 => 배치로 위치 지정 */
+  float: left;
+  font-size: 13px;
+  width: 150px;
+}

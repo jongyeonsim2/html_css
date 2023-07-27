@@ -82,5 +82,22 @@
       속성명 : clear
       속성값 : left, right, both
 
-      
+  1.5 웹 요소의 위치지정
+      속성명1 : position
+      속성값 : static : html 문서의 흐름. html tag 작성 순서.
+              relative : static 동일. 추가적으로 위치값을 지정 가능.
+              absolute : relative 를 적용한 상위 요소를 기준으로 위치를 지정.
+              fixed : 브라우저 기준으로 위치를 지정.
+
+      속성명2 :
+              left : 기준 위치와 요소 사이에 왼쪽으로 얼마나 떨어져 있는지 지정. 
+              right : 기준 위치와 요소 사이에 오른쪽으로 얼마나 떨어져 있는지 지정. 
+              top : 기준 위치와 요소 사이에 위쪽으로 얼마나 떨어져 있는지 지정. 
+              bottom : 기준 위치와 요소 사이에 아래쪽으로 얼마나 떨어져 있는지 지정. 
+
+      사용예 : 
+          position : absolute;
+          left : 50px;
+
+
 

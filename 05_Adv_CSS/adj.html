@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>고급 선택자 - 인접 형제 선택자</title>
+  <style>
+    /* 타입 선택자 */
+    body {
+      background-color: #eee;
+    }
+    section {
+      width: 600px;
+      margin: 20px auto;
+    }
+    p {
+      width: 500px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      line-height: 2;
+    }
+    /* 하위 선택자 - 인접 형제 선택자 */
+    h1 + p { /* h1 요소의 p 형제 요소중에서 첫 번째 p 요소(인접한 p 요소) 선택 */
+      color:blue;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>예약 방법 및 사용 요금</h1>
+    <!-- section 바로 밑의 p 요소 => section 의 자식인 p 요소 -->
+    <p>아직 온라인 예약 신청이 준비되어 있지 않습니다.</p>
+    <p>가족실(2~4인) : 60,000 원/일</p>
+    <p>가족실(4인 공용) : 25,000 원/시간</p>
+  </section>
+  <section2>
+    <h1>예약 방법 및 사용 요금</h1>
+    <p>아직 온라인 예약 신청이 준비되어 있지 않습니다.</p>
+    <div>
+      <p>가족실(2~4인) : 60,000 원/일</p>
+      <p>가족실(4인 공용) : 25,000 원/시간</p>
+    </div>
+  </section2>
+  <!--
+    구역을 만드는 Html Tag
+
+    - header : 머리글
+    - nav : 메뉴
+    - aside : 사이드(왼, 오른쪽, 중간) 메뉴
+    - section : 기타 구역을 나눌 필요가 있는 경우.
+                유사한 내용을 담고 있는 요소를 하나로 묶음.
+    - article : 본문글
+    - footer : copyright, 작성자, 회사명 등
+
+  -->
+</body>
+</html>

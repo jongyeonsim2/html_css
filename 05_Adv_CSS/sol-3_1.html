@@ -4,6 +4,209 @@
 <head>
   <meta charset="UTF-8">
   <title>미니 웹 사이트</title>
+  <style>
+    /* =============== 초기화 =============== */
+    * {
+      margin:0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Times New Roman', serif;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+
+
+    /* =============== 헤더(타이틀, 네이게이션 상, 네이게이션 하) =============== */
+    #main_header {
+      /* 중앙 정렬 */
+      width: 960px;
+      margin: 0 auto;
+
+      /* 위치 지정 */
+      height:160px;
+      position: relative;
+    }
+
+    /* Title */
+    #main_header>#title {
+      position: absolute;
+      left:20px;
+      top:30px;
+      font-family: 'Coiny', cursive;
+    }
+    
+    /* 메뉴1 : web, mobile, game, simulation, data */
+    #main_header>#main_gnb {
+      position: absolute;
+      right:0;
+      top:0;
+    }
+
+    /* 메뉴2 : html5, css3, javascript, jquery, node.js */
+    #main_header>#main_lnb {
+      position: absolute;
+      right: 0;
+      bottom: 10px;
+    }
+
+
+
+
+    /* =============== 메뉴 1 =============== */
+    /* 세로로 나열되어 있는것을 가로로 나열이 되도록 해야 함. */
+    #main_gnb>ul>li {
+      float : left;
+    }
+
+    /* 리스트의 각 아이템에 테두리르 표시해서 메뉴처럼 보이게 함. */
+    #main_gnb>ul>li>a {
+      display: block;
+      padding: 2px 10px;
+      border: 1px solid black;
+    }
+
+    /* 어떤 메뉴를 선택했는지를 시각적으로 표시 */
+    #main_gnb>ul>li>a:hover {
+      background: black;
+      color: white;
+    }
+
+    /* 메뉴 1의 첫 번째 박스의 왼쪽을 라운딩 함. */
+    #main_gnb>ul>li:first-child>a {
+      border-radius: 10px 0 0 10px;
+    }
+
+    /* 메뉴 1의 마지막 번째 박스의 오른쪽을 라운딩 함. */
+    #main_gnb>ul>li:last-child>a {
+      border-radius: 0px 10px 10px 0px;
+    }
+
+
+
+
+    /* =============== 메뉴 2 =============== */
+    /* 세로로 나열되어 있는것을 가로로 나열이 되도록 해야 함. */
+    #main_lnb>ul>li {
+      float: left;
+    }
+
+    /* 리스트의 각 아이템에 테두리르 표시해서 메뉴처럼 보이게 함. */
+    #main_lnb>ul>li>a {
+      display: block;
+      padding: 10px 20px;
+      border: 1px solid black;
+    }
+
+    /* 어떤 메뉴를 선택했는지를 시각적으로 표시 */
+    #main_lnb>ul>li>a:hover {
+      background: black;
+      color: white;
+    }
+
+    /* 메뉴 2의 첫 번째 박스의 왼쪽을 라운딩 함. */
+    #main_lnb>ul>li:first-child>a {
+      border-radius: 10px 0 0 10px;
+    }
+
+    /* 메뉴 2의 마지막 번째 박스의 오른쪽을 라운딩 함. */
+    #main_lnb>ul>li:last-child>a {
+      border-radius: 0px 10px 10px 0px;
+    }
+
+
+
+
+
+
+
+    /* =============== article =============== */
+    #content {
+      /* 중앙 정렬 */
+      width: 960px;
+      margin: 0 auto;
+
+      overflow: hidden;
+    }
+
+    /* content 를 기준으로 왼쪽은 article, 
+    오른쪽은 2 개의 사이드 메뉴로 표시 되도록 해야 함. */
+
+    /* 3개의 article을 부모인 content 에서 왼쪽으로 폭을 750px 로 지정. */
+    #content>#main_section {
+      width: 750px;
+      float: left;
+    }
+
+    /* 사이드 메뉴를 부모인 content 에서 오른쪽으로 폭을 200px 로 지정. */
+    #content>#main_aside {
+      width: 200px;
+      float:right;
+    }
+
+    /* article 에 테두리 표시 */
+    #main_section>article.main_article {
+      margin-bottom: 10px;
+      padding: 20px;
+      border: 1px solid black;
+    }
+
+
+    /* =============== 첫 번째 탭 메뉴 =============== */
+
+    /* 첫 번째 라디오 버튼이 보이지 않도록 해야함. */
+    input:nth-of-type(1) {
+      display: none;
+    }
+
+    /* 첫 번째 tab item 감추기 */
+    /* 첫 번째 input 의 형제 요소중에서 첫번째 div 를 감춤 */
+    /* 동작 타이밍 : second tab 을 선택했을 때, 감추게 함 */
+    input:nth-of-type(1)~div:nth-of-type(1) {
+      display: none;
+    }
+
+    /* second tab 이 check 가 되었을 때 */
+    input:nth-of-type(1):checked~div:nth-of-type(1) {
+      display: block;
+    }
+
+
+    /* =============== 두 번째 탭 메뉴 =============== */
+
+    /* 첫 번째 라디오 버튼이 보이지 않도록 해야함. */
+    input:nth-of-type(2) {
+      display: none;
+    }
+
+    /* 첫 번째 tab item 감추기 */
+    /* 첫 번째 input 의 형제 요소중에서 첫번째 div 를 감춤 */
+    /* 동작 타이밍 : second tab 을 선택했을 때, 감추게 함 */
+    input:nth-of-type(2)~div:nth-of-type(2) {
+      display: none;
+    }
+
+    /* second tab 이 check 가 되었을 때 */
+    input:nth-of-type(2):checked~div:nth-of-type(2) {
+      display: block;
+    }
+
+
+
+
+
+
+
+  </style>
 </head>
 
 <body>
